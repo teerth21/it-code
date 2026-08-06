@@ -1,0 +1,1099 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=DM+Serif+Display&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="CSS/Style.css">
+<title>IT Union Banswara | Rajasthan IT Employees Union</title>
+
+<meta name="description"
+content="Official website of IT Union Banswara. Latest news, gallery, members, achievements, memorandums, circulars and union activities.">
+
+<meta name="keywords"
+content="IT Union Banswara, Rajasthan IT Union, DOITC Rajasthan, Informatics Assistant, Programmer, IT Employees Union, IT Union">
+
+<meta name="author"
+content="IT Union Banswara">
+
+<meta name="robots"
+content="index,follow">
+
+<meta property="og:title"
+content="IT Union Banswara">
+
+<meta property="og:description"
+content="Official website of IT Union Banswara">
+
+<meta property="og:image"
+content="https://itunionbanswara.in/Uploads/Images/logo/image.png">
+
+<meta property="og:url"
+content="https://itunionbanswara.in">
+
+<meta property="og:type"
+content="website">
+</head>
+<body>
+
+
+
+<!-- NAV -->
+<nav>
+ <a class="logo"
+   href="#"
+   onclick="show('home', document.querySelectorAll('.nav-links button')[0]); return false;">
+
+    <img src="Uploads/Images/logo/image.png" alt="Banswara IT Union Logo" class="site-logo">
+
+    Banswara IT <span>Union</span>
+
+</a>
+  <div class="nav-links" id="navLinks">
+    <button class="active" onclick="show('home',this)">Home</button>
+    <button onclick="show('gallery',this)">Gallery</button>
+    <button onclick="show('news',this)">News</button>
+    <button onclick="show('team',this)">Team</button>
+    <button onclick="show('contact',this)">Contact Us</button>
+  </div>
+  <div style="display:flex;align-items:center;gap:10px;">
+    
+    <button class="hamburger" id="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- HOME -->
+<div id="home" class="page active">
+<div class="hero-slider">
+
+    <img src="Uploads\Images\HeroSlider\Heroslider_1.jpg"
+         class="hero-slide active">
+
+    <img src="Uploads\Images\HeroSlider\Heroslider_2.jpg"
+         class="hero-slide">
+
+    <img src="Uploads\Images\HeroSlider\Heroslider_3.jpg"
+         class="hero-slide">
+
+    <img src="Uploads\Images\HeroSlider\Heroslider_4.jpg"
+         class="hero-slide">
+
+    <img src="Uploads\Images\HeroSlider\Heroslider_5.jpg"
+         class="hero-slide">
+
+    <img src="Uploads\Images\HeroSlider\Heroslider_6.jpeg"
+         class="hero-slide">
+
+    <img src="Uploads\Images\HeroSlider\Heroslider_7.jpeg"
+         class="hero-slide">
+
+    <img src="Uploads\Images\HeroSlider\Heroslider_8.jpeg"
+         class="hero-slide">
+    
+
+
+</div>
+  <div class="stats-bar">
+
+<div class="stat-item"
+     onclick="openMembers()"
+     style="cursor:pointer;">
+
+    <div class="stat-icon"></div>
+
+    <div class="stat-num">170+</div>
+
+    <div class="stat-label">Members</div>
+    <div class="stat-action">View →</div>
+
+</div>
+
+
+
+<div class="stat-item"
+     onclick="show('gallery', document.querySelectorAll('.nav-links button')[1])"
+     style="cursor:pointer;">
+
+    <div class="stat-icon"></div>
+
+    <div class="stat-num">8+</div>
+
+    <div class="stat-label">Events Conducted</div>
+    <div class="stat-action">View →</div>
+
+</div> 
+
+
+<div class="stat-item"
+     onclick="openDepartments()"
+     style="cursor:pointer;">
+
+    <div class="stat-icon"></div>
+
+     <div class="stat-num">30+</div>
+
+
+    <div class="stat-label">
+        Departments Covered
+    </div>
+
+    <div class="stat-action">
+        View →
+    </div>
+
+</div>
+
+
+
+
+
+<div class="stat-item"
+     onclick="openBirthdayModal()"
+     style="cursor:pointer;">
+
+
+    <div class="stat-num"
+         id="birthdayCount">
+         0
+    </div>
+
+    <div class="stat-label">
+        Member Celebrating This Month 
+    </div>
+
+    <div class="stat-action">
+        View →
+    </div>
+
+</div>
+
+
+<div id="departmentModal" class="birthday-modal">
+    <div class="birthday-modal-content">
+
+        <span class="birthday-close"
+              onclick="closeDepartments()">
+            ×
+        </span>
+
+        <h2>
+            Departments Covered
+        </h2>
+
+        <input
+            type="text"
+            id="departmentSearch"
+            placeholder="Search department..."
+            class="member-search"
+            onkeyup="filterDepartments()">
+
+        <div id="departmentList">
+        </div>
+
+    </div>
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="activities-header">
+
+    <h2>How We Serve Our Members</h2>
+
+    <p>
+        Committed to the welfare, unity and professional collaboration of Government IT Employees.
+    </p>
+
+</div>
+
+<div class="activities-section">
+
+    <div class="activities-grid">
+
+        <div class="activity-card support">
+            <div class="activity-icon">👥</div>
+            <h3>Member Support</h3>
+            <p>
+                Providing assistance and guidance to union members and helping address workplace concerns.
+            </p>
+        </div>
+
+        <div class="activity-card coordination">
+            <div class="activity-icon">🏛</div>
+            <h3>Department Coordination</h3>
+            <p>
+                Strengthening communication and coordination among various government departments.
+            </p>
+        </div>
+
+        <div class="activity-card policy">
+            <div class="activity-icon">📢</div>
+            <h3>Policy & Information</h3>
+            <p>
+                Sharing important notifications, circulars and IT-related government initiatives.
+            </p>
+        </div>
+
+        <div class="activity-card events">
+            <div class="activity-icon">🎉</div>
+            <h3>Events & Meetings</h3>
+            <p>
+                Conducting meetings, seminars and community activities to promote unity and engagement.
+            </p>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="vision-header">
+
+    <h2>Our Vision & Objectives</h2>
+
+    <p>
+        Guiding principles that help strengthen the IT community of Banswara.
+    </p>
+
+</div>
+
+
+  <div class="vision-section">
+  <div class="vision-container">
+    
+
+
+    <div class="vision-grid">
+
+      
+
+      <!-- Vision -->
+      <div class="vision-box">
+        <h3>👁️ VISION</h3>
+
+<ul class="vision-list">
+    <li>Strengthen the IT community of Banswara.</li>
+    <li>Promote collaboration, innovation and knowledge sharing.</li>
+    <li>Encourage professional growth and skill development.</li>
+    <li>Create a supportive and inclusive environment for all members.</li>
+    <li>Build a strong network of IT professionals across the region.</li>
+</ul>
+      </div>
+
+      <!-- Objective -->
+      <div class="vision-box">
+        <h3>🎯 OBJECTIVE</h3>
+       <ul class="vision-list">
+    <li>Represent and support the interests of IT professionals.</li>
+    <li>Organize technical events, workshops and seminars.</li>
+    <li>Facilitate learning, mentoring and career opportunities.</li>
+    <li>Promote transparent communication among members.</li>
+    <li>Encourage leadership, teamwork and community engagement.</li>
+</ul>
+      </div>
+
+    </div>
+  </div>
+</div>
+<section class="home-media-section">
+
+    <div class="news-column">
+
+           <div class="section-title">
+        <h2>📸 Latest News</h2>
+        </div>
+        <div class="news-ticker-wrapper">
+        <div id="homeNewsContainer"></div>
+        </div>
+        <button class="btn-primary"
+            onclick="show('news', document.querySelectorAll('.nav-links button')[2])">
+
+            View All News
+
+        </button>
+
+    </div>
+
+   <div class="gallery-column">
+
+    <div class="section-title">
+        <h2>📸 Recent Moments</h2>
+    </div>
+
+    <div class="home-gallery-slider">
+
+        <img id="homeGalleryImage"
+             src=""
+             alt="Recent Moment">
+
+    </div>
+
+    <button class="btn-primary"
+        onclick="show('gallery',
+        document.querySelectorAll('.nav-links button')[1])">
+
+        View Gallery
+
+    </button>
+
+</div>
+
+
+<div class="videos-column">
+
+    <div class="section-title">
+        <h2>▶ Recent Videos</h2>
+    </div>
+
+    <div id="homeVideoContainer"></div>
+
+</div>
+
+<div class="leader-column">
+
+    <div class="section-title">
+        <h2>President Message</h2>
+    </div>
+
+    <div id="leaderContainer"></div>
+
+</div>
+
+</div>
+
+</section>
+</div>
+
+
+
+
+
+
+
+
+<!-- GALLERY -->
+<div id="gallery" class="page">
+
+  <div class="page-header">
+    <h2>Gallery</h2>
+    <p>
+      Events, conferences, and community moments
+      from across our union
+    </p>
+  </div>
+
+  <div id="galleryGrid" class="gallery-grid">
+  </div>
+
+</div>
+
+<div id="galleryModal"
+     style="
+      display:none;
+      position:fixed;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      background:rgba(0,0,0,.8);
+      z-index:9999;
+     ">
+
+  <div style="
+      width:90%;
+      max-width:1200px;
+      margin:30px auto;
+      background:white;
+      padding:20px;
+      border-radius:10px;
+      max-height:90vh;
+      overflow:auto;
+  ">
+
+    <span
+      onclick="closeGalleryModal()"
+      style="
+        float:right;
+        font-size:30px;
+        cursor:pointer;
+      ">
+      ×
+    </span>
+
+    <h2 id="galleryModalTitle"></h2>
+
+    <div id="galleryModalImages"
+         style="
+          display:grid;
+          grid-template-columns:
+          repeat(auto-fill,minmax(250px,1fr));
+          gap:15px;
+         ">
+    </div>
+
+  </div>
+
+</div>
+
+<!-- NEWS -->
+<div id="news" class="page">
+
+    <div class="page-header">
+        <h2>News & Updates</h2>
+        <p>
+            Stay informed about union activities,
+            circulars, agreements and announcements.
+        </p>
+    </div>
+
+    <!-- NEWS TOOLBAR -->
+    <div class="news-toolbar">
+
+        <input
+            type="text"
+            id="newsSearch"
+            class="member-search"
+            placeholder="Search news..."
+            onkeyup="searchNews()">
+
+        <div class="news-filters">
+
+            <button class="filter-btn active" onclick="filterNews('All')">
+                All
+            </button>
+
+            <button class="filter-btn" onclick="filterNews('Events')">
+                Events
+            </button>
+
+            <button class="filter-btn" onclick="filterNews('Memorandums')">
+                Memorandums
+            </button>
+
+            <button class="filter-btn" onclick="filterNews('Agreements')">
+                Agreements
+            </button>
+
+            <button class="filter-btn" onclick="filterNews('Statements')">
+                Statements
+            </button>
+
+            <button class="filter-btn" onclick="filterNews('Circulars')">
+                Circulars
+            </button>
+
+            <button class="filter-btn" onclick="filterNews('Reports')">
+                Reports
+            </button>
+
+            <button class="filter-btn" onclick="filterNews('Achievements')">
+                Achievements
+            </button>
+
+            <button class="filter-btn" onclick="filterNews('Announcements')">
+                Announcements
+            </button>
+
+        </div>
+
+    </div>
+
+    <div id="newsList" class="news-list"></div>
+
+</div>
+<!-- TEAM -->
+<div id="team" class="page">
+
+    <div class="page-header">
+
+       <h2>Executive Committee</h2>
+
+    <p>
+        Meet the office bearers and representatives of IT Union Banswara.
+    </p>
+
+    </div>
+
+    <div class="team-grid">
+
+        <div class="team-card">
+
+    <div class="avatar">
+        <img src="Uploads/Images/Executive Commitee/drupat.jpeg" alt="Drupat Singh Chouhan">
+    </div>
+
+    <h3>Drupat Singh Chouhan</h3>
+
+    <div class="team-role">
+        President
+    </div>
+
+    <div class="team-mobile">
+        📞 9929356085
+    </div>
+
+</div>
+
+        <div class="team-card">
+
+    <div class="avatar">
+        <img src="Uploads/Images/Executive Commitee/nitin.jpeg" alt="Nitin Suthar">
+    </div>
+
+    <h3>Nitin Suthar</h3>
+
+     <div class="team-role">
+        Vice President
+    </div>
+
+    <div class="team-mobile">
+        📞 9929699010
+    </div>
+
+</div>
+           <div class="team-card">
+
+    <div class="avatar">
+        <img src="Uploads/Images/Executive Commitee/lavish.jpeg" alt="Lavish Pandwal">
+    </div>
+
+    <h3>Lavish Pandwal</h3>
+
+    <div class="team-role">
+        Treasurer
+    </div>
+
+    <div class="team-mobile">
+        📞 9694808679
+    </div>
+
+</div>
+
+     <div class="team-card">
+
+    <div class="avatar">
+        <img src="Uploads/Images/Executive Commitee/prem.jpeg" alt="Prem Pakash">
+    </div>
+
+    <h3>Prem Pakash</h3>
+
+    <div class="team-role">
+        General Secretary
+    </div>
+
+    <div class="team-mobile">
+        📞 7654243957
+    </div>
+
+</div>
+
+     <div class="team-card">
+
+    <div class="avatar">
+        <img src="Uploads/Images/Executive Commitee/ravi.jpeg" alt="Ravindra Kumar Meena">
+    </div>
+
+    <h3>Ravindra Kumar Meena</h3>
+
+    <div class="team-role">
+       Consultant
+    </div>
+
+    <div class="team-mobile">
+        📞 9694591759
+    </div>
+
+</div>
+
+     <div class="team-card">
+
+    <div class="avatar">
+        <img src="Uploads/Images/Executive Commitee/khushbu.jpeg" alt="Khushboo Bariya">
+    </div>
+
+    <h3>Khushboo Bariya</h3>
+
+    <div class="team-role">
+        Women Wing Incharge
+    </div>
+
+    <div class="team-mobile">
+        📞 7976320047
+    </div>
+
+</div>
+
+     <div class="team-card">
+
+    <div class="avatar">
+        <img src="Uploads/Images/Executive Commitee/chanda.jpeg" alt="Chanda Prajapat">
+    </div>
+
+    <h3>Chanda Prajapat</h3>
+
+    <div class="team-role">
+        Women Wing Incharge
+    </div>
+
+    <div class="team-mobile">
+        📞 8824348889
+    </div>
+
+</div>
+
+     <div class="team-card">
+
+    <div class="avatar">
+        <img src="Uploads/Images/Executive Commitee/Teerth.jpg" alt="Teerth Jain">
+    </div>
+
+    <h3>Teerth Jain</h3>
+
+    <div class="team-role">
+        District Nodal Officer
+    </div>
+
+    <div class="team-mobile">
+        📞 9468685599
+    </div>
+
+</div>
+
+     <div class="team-card">
+
+    <div class="avatar">
+        <img src="Uploads/Images/Executive Commitee/aayush.jpeg" alt="Aayush Pandaya">
+    </div>
+
+    <h3>Aayush Pandya</h3>
+
+    <div class="team-role">
+        Social Media Handler
+    </div>
+
+    <div class="team-mobile">
+        📞 8955439028
+    </div>
+
+</div>
+
+     <div class="team-card">
+
+    <div class="avatar">
+        <img src="Uploads/Images/Executive Commitee/kaushal.jpeg" alt="Kaushal Kishore">
+    </div>
+
+    <h3>Kaushal Kishore</h3>
+
+    <div class="team-role">
+       Press Sachiv
+    </div>
+
+    <div class="team-mobile">
+        📞 7568618275
+    </div>
+
+</div>
+
+
+       </div>
+
+
+ 
+
+  <div class="page-header">
+  <h2>Member Directory</h2>
+     <p>
+        Search and view registered members of IT Union Banswara.
+    </p>
+</div>
+
+<!-- Members Section (separate from team grid) -->
+<div class="member-filters">
+
+    <input
+        type="text"
+        id="memberSearch"
+        placeholder="Search by name, designation or office..."
+        onkeyup="filterMembers()">
+
+    <select
+        id="departmentFilter"
+        onchange="filterMembers()">
+
+        <option value="">
+            All Offices
+        </option>
+
+    </select>
+
+    <select
+        id="designationFilter"
+        onchange="filterMembers()">
+
+        <option value="">
+            All Designations
+        </option>
+
+    </select>
+
+    <div class="member-table-wrapper">
+
+    <table class="member-table">
+    <thead>
+      <tr>
+        <th>Sr No.</th>
+        <th>Member Name</th>
+        <th>Designation</th>
+        <th>Office </th>
+        <th>location </th>
+        <th>Contact Number</th>
+      </tr>
+    </thead>
+    <tbody id="membersTable"></tbody>
+  </table>
+  </div>
+
+</div>
+
+</div>
+</div>
+
+<!-- CONTACT -->
+<div id="contact" class="page">
+  <div class="page-header"><h2>Contact Us</h2><p>Reach out for membership enquiries, legal support, or press</p></div>
+  <div class="contact-layout">
+
+ 
+<div class="contact-membership">
+
+    <h3>How to Join the Union</h3>
+
+    <div class="join-step">
+        <span>1</span>
+        <div>
+            <h4>Verify Eligibility</h4>
+            <p>Government IT employees working in Banswara district can apply.</p>
+        </div>
+    </div>
+
+    <div class="join-step">
+        <span>2</span>
+        <div>
+            <h4>Submit Membership Request</h4>
+            <p>Contact the union office or any executive committee member.</p>
+        </div>
+    </div>
+
+    <div class="join-step">
+        <span>3</span>
+        <div>
+            <h4>Provide Required Details</h4>
+            <p>Share your designation, department and contact information.</p>
+        </div>
+    </div>
+
+    <div class="join-step">
+        <span>4</span>
+        <div>
+            <h4>Verification</h4>
+            <p>The committee will review your application.</p>
+        </div>
+    </div>
+
+<div class="join-step">
+    <span>5</span>
+    <div>
+        <h4>Pay Membership Fee</h4>
+        <p>
+            Deposit the prescribed membership fee as communicated by the union office.
+        </p>
+    </div>
+</div>
+
+<div class="join-step">
+    <span>6</span>
+    <div>
+        <h4>Membership Confirmation</h4>
+        <p>
+            Your membership will be activated after successful verification and fee submission.
+        </p>
+    </div>
+</div>
+
+</div>
+
+
+    <div class="contact-info">
+      <h3>Get In Touch</h3>
+<div class="contact-row">
+    <div class="contact-icon">📧</div>
+    <div>
+        <h4>Membership Email</h4>
+        <p>banswaraitunion@gmail.com</p>
+    </div>
+</div>
+
+<div class="contact-row">
+    <div class="contact-icon">📞</div>
+    <div>
+        <h4>Membership Helpline</h4>
+        <p>+91 9929356085</p>
+        <p>Mon–Fri, 9:00 AM – 6:00 PM</p>
+    </div>
+</div>
+
+<div class="contact-row">
+    <div class="contact-icon">🏢</div>
+    <div>
+        <h4>Union Office</h4>
+        <p>Behind MG Hospital</p>
+        <p>Banswara, Rajasthan 327001</p>
+    </div>
+</div>
+
+<div class="contact-row">
+    <div class="contact-icon">👥</div>
+    <div>
+        <h4>Membership Assistance</h4>
+        <p>
+            Contact the union office for membership enquiries,
+            registration guidance and application support.
+        </p>
+    </div>
+</div>
+
+
+
+    <div class="contact-icon">📱</div>
+    <div>
+        <h4>Join WhatsApp Community</h4>
+        <p>
+            Stay updated with union announcements,
+            circulars, meetings and important notices.
+        </p>
+
+        <a href="https://chat.whatsapp.com/YOUR_LINK"
+           target="_blank"
+           class="whatsapp-btn">
+           Join Community
+        </a>
+    </div>
+
+    </div>
+
+  </div>
+</div>
+
+<!-- ADMIN PANEL -->
+
+<!-- FOOTER -->
+
+<div class="main-footer">
+
+  <div class="footer-container">
+
+    <!-- LEFT -->
+   
+
+    <!-- QUICK LINKS -->
+    <div class="footer-box">
+      <h3>Quick Links</h3>
+      <ul>
+        <li onclick="show('home', document.querySelectorAll('.nav-links button')[0])">Home</li>
+        <li onclick="show('gallery', document.querySelectorAll('.nav-links button')[1])">Gallery</li>
+        <li onclick="show('news', document.querySelectorAll('.nav-links button')[2])">News</li>
+        <li onclick="show('team', document.querySelectorAll('.nav-links button')[3])">Team</li>
+      </ul>
+    </div>
+
+    
+   <!-- IMPORTANT LINKS -->
+<div class="footer-box">
+  <h3>Important Links</h3>
+  <ul>
+    <li>
+      <a href="https://assembly.rajasthan.gov.in/" class="footer-link">
+        Rajasthan Assembly
+      </a>
+    </li>
+    <li>
+     <a href="https://cmo.rajasthan.gov.in/home" class="footer-link">
+       Chief Minister Office
+      </a>
+    </li>
+    <li>
+        <a href="https://finance.rajasthan.gov.in/website/" class="footer-link">
+      Finance Department
+      </a>
+        </li>
+    <li>
+          <a href="https://dop.rajasthan.gov.in/" class="footer-link">
+      Dept. of Personnel
+      </a>
+        </li>
+  </ul>
+</div>
+
+<div class="footer-box">
+  <h2>Social Connect</h2>
+  <p>You can also connect with us using various social media platforms.</p>
+
+  <div class="social-icons">
+    <a href="https://www.facebook.com/profile.php?id=61592410132951" target="_blank">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+
+    <a href="https://www.instagram.com/itunionbanswara/" target="_blank">
+      <i class="fab fa-instagram"></i>
+    </a>
+
+    <a href="https://x.com" target="_blank">
+      <i class="fab fa-x-twitter"></i>
+    </a>
+
+    <a href="https://whatsapp.com" target="_blank">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <a href="https://youtube.com" target="_blank">
+      <i class="fab fa-youtube"></i>
+    </a>
+  </div>
+</div>
+ 
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 IT Union Banswara. All Rights Reserved
+   <h3> Developed and Managed By Teerth Jain</h3>
+  </div>
+
+</div>
+
+
+
+
+<!-- BIRTHDAY MODAL -->
+
+<div id="birthdayModal" class="birthday-modal">
+
+    <div class="birthday-modal-content">
+
+        <span
+            class="birthday-close"
+            onclick="closeBirthdayModal()">
+            ×
+        </span>
+
+        <h2>🎂 Birthdays This Month</h2>
+
+        <div id="birthdayList"></div>
+
+    </div>
+
+</div>
+
+
+
+<!-- Full screen image viewer -->
+
+<div id="imageViewer"
+     style="
+      display:none;
+      position:fixed;
+      inset:0;
+      background:rgba(0,0,0,.95);
+      z-index:10000;
+      text-align:center;
+     ">
+
+  <span
+    onclick="closeImageViewer()"
+    style="
+      position:absolute;
+      top:20px;
+      right:30px;
+      color:white;
+      font-size:40px;
+      cursor:pointer;
+    ">
+      ×
+  </span>
+
+<div id="imageCounter"
+     style="
+        position:absolute;
+        bottom:25px;
+        left:50%;
+        transform:translateX(-50%);
+
+        background:rgba(0,0,0,.75);
+        color:white;
+
+        padding:10px 20px;
+
+        border-radius:25px;
+
+        font-size:15px;
+        font-weight:600;
+
+        backdrop-filter:blur(5px);
+
+        z-index:10001;
+     ">
+</div>
+
+<img id="viewerImage">
+
+   
+
+
+<button
+    id="prevBtn"
+    onclick="showPreviousImage()"
+
+    style="
+      position:absolute;
+      left:20px;
+      top:50%;
+      transform:translateY(-50%);
+      font-size:40px;
+      background:none;
+      border:none;
+      color:white;
+      cursor:pointer;
+    ">
+    ❮
+</button>
+
+<button
+    id="nextBtn"
+    onclick="showNextImage()"
+
+    style="
+      position:absolute;
+      right:20px;
+      top:50%;
+      transform:translateY(-50%);
+      font-size:40px;
+      background:none;
+      border:none;
+      color:white;
+      cursor:pointer;
+    ">
+    ❯
+
+
+</button>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>

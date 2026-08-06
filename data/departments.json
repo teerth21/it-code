@@ -1,0 +1,126 @@
+[
+  {
+    "id": 1,
+    "departmentName": "Department of Information Technology & Communication (DOIT&C)"
+  },
+  {
+    "id": 2,
+    "departmentName": "Registration & Stamps Department"
+  },
+  {
+    "id": 3,
+    "departmentName": "Police Department"
+  },
+  {
+    "id": 4,
+    "departmentName": "Revenue Department"
+  },
+  {
+    "id": 5,
+    "departmentName": "Medical & Health Department"
+  },
+  {
+    "id": 6,
+    "departmentName": "Mines & Geology Department"
+  },
+  {
+    "id": 7,
+    "departmentName": "Excise Department"
+  },
+  {
+    "id": 8,
+    "departmentName": "Election Department"
+  },
+  {
+    "id": 9,
+    "departmentName": "Women & Child Development (ICDS)"
+  },
+  {
+    "id": 10,
+    "departmentName": "Social Justice & Empowerment Department"
+  },
+  {
+    "id": 11,
+    "departmentName": "Rajasthan Medical Services Corporation Limited"
+  },
+  {
+    "id": 12,
+    "departmentName": "Agriculture Marketing Department"
+  },
+  {
+    "id": 13,
+    "departmentName": "Transport and Road Safety Department"
+  },
+  {
+    "id": 14,
+    "departmentName": "Labour Department"
+  },
+  {
+    "id": 15,
+    "departmentName": "Economics & Statistics Department"
+  },
+  {
+    "id": 16,
+    "departmentName": "Food Safety and Drug Control"
+  },
+  {
+    "id": 17,
+    "departmentName": "Cyber Crime"
+  },
+  {
+    "id": 18,
+    "departmentName": "Department of Prosecution"
+  },
+  {
+    "id": 19,
+    "departmentName": "Employment Department"
+  },
+  {
+    "id": 20,
+    "departmentName": "Animal Husbandry Department"
+  },
+  {
+    "id": 21,
+    "departmentName": "Industries & Commerce Department"
+  },
+  {
+    "id": 22,
+    "departmentName": "Forest Department"
+  },
+  {
+    "id": 23,
+    "departmentName": "Information & Public Relation Department"
+  },
+  {
+    "id": 24,
+    "departmentName": "Food Civil Supplies & Consumer Affairs Department"
+  },
+  {
+    "id": 25,
+    "departmentName": "Treasuries & Accounts Department"
+  },
+  {
+    "id": 26,
+    "departmentName": "Director Lok Seva"
+  },
+  {
+    "id": 27,
+    "departmentName": "Agriculture Department"
+  },
+  {
+    "id": 28,
+    "departmentName": "Rajasthan SC & ST Finance & Development Co-operative Corporation Ltd."
+  },
+  {
+    "id": 29,
+    "departmentName": "Rajasthan State Beverages Corporation Limited"
+  },
+  {
+    "id": 30,
+    "departmentName": "Employee State Insurance Scheme"
+  },
+  {
+    "id": 31,
+    "departmentName": "iStart Project"
+  }
+]

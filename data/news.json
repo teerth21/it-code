@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "title": "District Level Meeting Organized",
+    "category": "Events",
+    "date": "2026-06-20",
+    "description": "...",
+    "pdf": null
+  },
+  {
+    "id": 2,
+    "title": "Memorandum Submitted Regarding Staff Shortage",
+    "category": "Memorandums",
+    "date": "2026-06-15",
+    "description": "...",
+    "pdf": "pdfs/memorandum-staff-shortage.pdf"
+  },
+  {
+    "id": 3,
+    "title": "Agreement on Training Programs Finalized",
+    "category": "Agreements",
+    "date": "2026-06-10",
+    "description": "...",
+    "pdf": "pdfs/training-agreement.pdf"
+  },
+  {
+    "id": 4,
+    "title": "Official Statement on Transfer Policy",
+    "category": "Statements",
+    "date": "2026-06-05",
+    "description": "...",
+    "pdf": null
+  },
+  {
+    "id": 5,
+    "title": "Membership Renewal Circular",
+    "category": "Circulars",
+    "date": "2026-06-01",
+    "description": "...",
+    "pdf": "pdfs/membership-renewal-circular.pdf"
+  },
+  {
+    "id": 6,
+    "title": "Annual Activity Report Released",
+    "category": "Reports",
+    "date": "2026-05-25",
+    "description": "...",
+    "pdf": "pdfs/annual-report-2025-26.pdf"
+  },
+  {
+    "id": 7,
+    "title": "State Level Recognition Received",
+    "category": "Achievements",
+    "date": "2026-05-18",
+    "description": "...",
+    "pdf": null
+  },
+  {
+    "id": 8,
+    "title": "Membership Drive Announced",
+    "category": "Announcements",
+    "date": "2026-05-10",
+    "description": "...",
+    "pdf": null
+  }
+]
