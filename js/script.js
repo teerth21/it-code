@@ -1209,14 +1209,10 @@ window.addEventListener('click', function(e) {
         document.getElementById('departmentModal');
 
     if (e.target === birthdayModal) {
-
-        birthdayModal.style.display = 'none';
-
-        document.body.style.overflow = "";
+        closeBirthdayModal();
     }
 
     if (e.target === departmentModal) {
-
         closeDepartments();
     }
 
