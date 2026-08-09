@@ -1075,30 +1075,68 @@ setInterval(() => {
 }, 4000);
 
 
-async function openDepartments() {
+let departments = [];
+
+
+async function openDepartments(){
 
     document.body.style.overflow = "hidden";
 
-    const response =
-        await fetch(
-            "data/departments.json"
+    const container =
+        document.getElementById(
+            "departmentList"
         );
 
-    departments =
-        await response.json();
+    try {
 
-    renderDepartments(
-        departments
-    );
+        const response =
+            await fetch("data/departments.json");
 
-    document.getElementById(
-        "departmentModal"
-    ).style.display = "flex";
+        departments =
+            await response.json();
 
-    document.activeElement?.blur();
+        if(departments.length === 0){
+
+            container.innerHTML =
+                `
+                <p>
+                    No departments available.
+                </p>
+                `;
+
+        }else{
+
+            renderDepartments(
+                departments
+            );
+        }
+
+        document.getElementById(
+            "departmentModal"
+        ).style.display = "flex";
+
+        document.activeElement?.blur();
+
+    }catch(error){
+
+        console.error(
+            "Error loading departments:",
+            error
+        );
+
+        container.innerHTML =
+            `
+            <p>
+                Unable to load departments.
+            </p>
+            `;
+
+        document.body.style.overflow = "";
+    }
 }
 
-function closeDepartments() {
+
+function closeDepartments(){
 
     document.body.style.overflow = "auto";
 
@@ -1107,7 +1145,8 @@ function closeDepartments() {
     ).style.display = "none";
 }
 
-function renderDepartments(list) {
+
+function renderDepartments(list){
 
     const container =
         document.getElementById(
@@ -1116,27 +1155,32 @@ function renderDepartments(list) {
 
     container.innerHTML = "";
 
-    list.forEach((dept,index) => {
+    list.forEach(
+        (dept,index) => {
 
-        container.innerHTML += `
-            <div class="birthday-card">
+        container.innerHTML +=
+        `
+        <div class="birthday-card">
 
-                <div class="birthday-date">
-                    ${index + 1}
-                </div>
+            <div class="birthday-date">
+                ${index + 1}
+            </div>
 
-                <div>
-                    <h4>
-                        ${dept.departmentName}
-                    </h4>
-                </div>
+            <div>
+
+                <h4>
+                    ${dept.departmentName}
+                </h4>
 
             </div>
+
+        </div>
         `;
     });
 }
 
-function filterDepartments() {
+
+function filterDepartments(){
 
     const keyword =
         document.getElementById(
@@ -1145,10 +1189,10 @@ function filterDepartments() {
 
     const filtered =
         departments.filter(
-            d =>
-            d.departmentName
-             .toLowerCase()
-             .includes(keyword)
+            dept =>
+                dept.departmentName
+                    .toLowerCase()
+                    .includes(keyword)
         );
 
     renderDepartments(
@@ -1164,15 +1208,18 @@ window.addEventListener('click', function(e) {
     const departmentModal =
         document.getElementById('departmentModal');
 
-    if(e.target === birthdayModal){
+    if (e.target === birthdayModal) {
 
         birthdayModal.style.display = 'none';
+
+        document.body.style.overflow = "";
     }
 
-    if(e.target === departmentModal){
+    if (e.target === departmentModal) {
 
-        departmentModal.style.display = 'none';
+        closeDepartments();
     }
+
 });
 
 
