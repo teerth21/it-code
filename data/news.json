@@ -1,66 +1,42 @@
 [
-  {
-    "id": 1,
-    "title": "District Level Meeting Organized",
-    "category": "Events",
-    "date": "2026-06-20",
-    "description": "...",
-    "pdf": null
-  },
-  {
-    "id": 2,
-    "title": "Memorandum Submitted Regarding Staff Shortage",
-    "category": "Memorandums",
-    "date": "2026-06-15",
-    "description": "...",
-    "pdf": "pdfs/memorandum-staff-shortage.pdf"
-  },
-  {
-    "id": 3,
-    "title": "Agreement on Training Programs Finalized",
-    "category": "Agreements",
-    "date": "2026-06-10",
-    "description": "...",
-    "pdf": "pdfs/training-agreement.pdf"
-  },
-  {
-    "id": 4,
-    "title": "Official Statement on Transfer Policy",
-    "category": "Statements",
-    "date": "2026-06-05",
-    "description": "...",
-    "pdf": null
-  },
-  {
-    "id": 5,
-    "title": "Membership Renewal Circular",
-    "category": "Circulars",
-    "date": "2026-06-01",
-    "description": "...",
-    "pdf": "pdfs/membership-renewal-circular.pdf"
-  },
-  {
-    "id": 6,
-    "title": "Annual Activity Report Released",
-    "category": "Reports",
-    "date": "2026-05-25",
-    "description": "...",
-    "pdf": "pdfs/annual-report-2025-26.pdf"
-  },
-  {
-    "id": 7,
-    "title": "State Level Recognition Received",
-    "category": "Achievements",
-    "date": "2026-05-18",
-    "description": "...",
-    "pdf": null
-  },
-  {
-    "id": 8,
-    "title": "Membership Drive Announced",
-    "category": "Announcements",
-    "date": "2026-05-10",
-    "description": "...",
-    "pdf": null
-  }
+ {
+  "id": 1,
+  "title": "Permission for Participation in District Level IT Connect–2025",
+  "category": "Official Letters",
+  "date": "2025-12-17",
+  "description": "Regarding permission for IT employees to participate in the District Level IT Connect–2025 program scheduled on 21.12.2025.",
+  "pdf": "Uploads/PDF/ALL DLO.pdf"
+},
+ {
+  "id": 2,
+  "title": "Request for Electricity Arrangements for District Level IT Connect–2025",
+  "category": "Official Letters",
+  "date": "2025-12-17",
+  "description": "Requesting proper electricity supply arrangements for the District Level IT Connect–2025 program scheduled on 21.12.2025.",
+  "pdf": "Uploads/PDF/AVVNL BANSWARA.pdf"
+},
+ {
+  "id": 3,
+  "title": "Request for Cricket Ground for Inter-Departmental Cricket Competition",
+  "category": "Official Letters",
+  "date": "2026-01-12",
+  "description": "Requesting permission to use the cricket ground for the Inter-Departmental Cricket Competition 2025–26 scheduled from 17.01.2026 to 18.01.2026.",
+  "pdf": "Uploads/PDF/Cricket ground letter.pdf"
+},
+{
+  "id": 4,
+  "title": "Memorandum for Creation of IT Cadre Posts in Panchayati Raj Department",
+  "category": "Memorandums",
+  "date": "2025-05-19",
+  "description": "Regarding creation of IT cadre posts in the Panchayati Raj Department to strengthen IT support at Panchayat Samiti and Gram Panchayat levels.",
+  "pdf": "Uploads/PDF/PanchayatiRaj Post creation gyapan.pdf"
+},
+{
+  "id": 5,
+  "title": "VC Operation Arrangements Due to District Level IT Connect–2025",
+  "category": "Official Letters",
+  "date": "2025-12-17",
+  "description": "Requesting arrangements for operation of video conferencing through Rajasthan/RajNET engineers or others on 21.12.2025, as district IT personnel will be participating in the District Level IT Connect–2025 conference.",
+  "pdf": "Uploads/PDF/SA Sir for VC Help.pdf"
+}
 ]
